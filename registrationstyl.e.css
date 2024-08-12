@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    background-color: rgb(27, 2, 45);
+   background-image: url(HD-wallpaper-purple-diamonds-purple-diamond-beautiful-art-ore.jpg);
+    margin: 0;
+}
+body img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.heading{
+    text-align: center;
+  font-family:  'Pacifico', cursive;
+  color: gold;
+  font-size: 100px;
+}
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes changeColor {
+    0% {
+        color: gold;
+    }
+    25%{
+        color: red;
+    }
+    50% {
+        color: white;
+    }
+    75% {
+        color: black;
+        text-shadow: 2px 2px 4px white(0, 0, 0, 0.7);
+    }
+}
+
+.heading {
+    font-family: 'Pacifico', cursive;
+  
+    font-weight: bold;
+    animation: changeColor 5s infinite;
+    border-radius: 5px; 
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+   animation: popIn 1s ease-in-out, changeColor 3s infinite;
+}
+
+
+#logincontainer {
+    margin-top: 40px;
+    margin-bottom: 400px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: rgb(53, 0, 128);
+    width: 550px;
+    border-radius: 5px;
+    border: 3px solid goldenrod;
+}
+
+#logo{
+    background-color: black;
+}
+#logo img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 2px;
+}
+
+#login{
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Pacifico', cursive;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border: 2px solid gold;
+}
+#sigi-in{
+    padding: 10px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Pacifico', cursive;
+    border: 2px solid gold;
+}
+
+
+#login:hover,
+#sigi-in:hover {
+    background-color: rgb(30, 8, 61);
+    color: #fff; 
+}
+
+#form{
+    padding-top: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: white;text-align: left;
+}
+#gender,#name,#age,#number,#email{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    background-color:  rgb(30, 8, 61);; 
+    color: gold;
+    font-size: 25px;
+}
+#loginbutton{
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    height: 50px;
+    font-family: 'Oswald', sans-serif ;
+
+}
+
+#logo {
+    position: relative;
+    width: 100%;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This property ensures the image covers the entire container */
+}
+#loginbutton a{
+    color: white;
+    text-decoration: none;
+}

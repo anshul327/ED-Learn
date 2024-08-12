@@ -1,0 +1,135 @@
+body
+{
+    margin: 0px;
+    border: 0px;
+    background-color: rgb(29, 29, 29);
+}
+#secondheading {
+    background-color:inherit;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+#heading
+{
+    border: 2px solid cyan;
+    background: linear-gradient(135deg, #00f, #0ff, #f00, #ff0, rgb(0, 255, 64));   
+}
+
+#secondheading p {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0; 
+    display: inline-block; 
+    opacity: 0;
+    animation: appear 2.5s infinite forwards;
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1; 
+    }
+}
+#secondheading p span:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+#secondheading p span:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+#secondheading p span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+hr
+{
+    color: white;
+}
+
+#domain
+{
+    padding-left: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid cyan;
+    border-radius: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#domain button
+{
+
+  padding: 20px 20px 20px 20px;
+  border: 3px solid cyan;
+  border-radius: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+#question
+{
+    background-color: rgb(45, 7, 111);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+#question
+{
+    border-radius: 30px;
+    border: 3px solid white ;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#firsttwooption button ,#lasttwooption button
+{
+    background-color: rgb(45, 7, 111);
+    font-size: 25px;
+    width: 600px;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+#firsttwooption button:hover ,#lasttwooption button:hover
+{
+    background-color: aqua;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+#quizquestion-1,#quizquestion-2,#quizquestion-3,#quizquestion-4,#quizquestion-5,#quizquestion-6,#quizquestion-7
+{
+    background: url(bg1.jpg);
+    display: none;
+}
+#heading:hover
+{
+    color: black;
+    background: linear-gradient(135deg, #00f, #0ff, #f00, #ff0, rgb(0, 255, 64));   
+}
+#startbtn
+{
+    align-items: center;
+    justify-content: center;
+    padding-left: 320px;
+}
+#startbtn button{
+    border: 3px solid white;
+    font-size: 25px;
+}
+#quiz-result
+{
+    color: white;
+    border: 2px solid cyan;
+    font-size: 30px;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,554 @@
+body{
+    margin: 0px;
+    border: 0px;
+    background-color: rgb(29, 29, 29);
+    
+}
+#navbar
+{
+    display: flex;
+}
+#heading
+{
+    padding-top: 10px;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    text-align: left;
+}
+.taskbar
+{
+    padding-top: 10px;
+    align-items: left;
+    justify-content: left;
+    color: white;
+    text-decoration: none;
+    display:inline-block;
+    box-sizing: border-box;
+   
+}
+#nighmode
+{
+    justify-content: right;
+    align-items: right;
+}
+#nightmode img{
+    display: block;
+    height: 70px;
+    width: 90px;
+}
+.taskbar a
+{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid white;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.taskbar a:hover
+{
+    background-color: rgb(68, 0, 128);
+}
+
+.taskbar button
+{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+hr{
+    color: white;
+}
+#navbar2{
+    display: flex;
+}
+
+#names
+{
+    padding-left: 300px;
+    width: 100%;
+    display: block;
+}
+#names a{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+#names a:hover
+{
+    background-color: rgb(68, 0, 128);
+}
+#search
+{
+    display: block;
+   align-items: right;
+   justify-content: right;
+   align-items: center;
+  width: 100px;
+  background-color: rgb(29, 29, 29);
+  color: white;
+}
+#navbar2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#names {
+    display: flex;
+    gap: 25px;
+}
+
+#search {
+    padding-left: 40px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#banner{
+    background: url(christian-wiediger-WkfDrhxDMC8-unsplash.jpg) no-repeat 0 0;
+    background-size: cover;
+ }
+ .banner-tittle{
+    padding-top: 5rem;
+ }
+ .banner-tittle h1{
+    font-style: bolder;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    margin: 0px;
+ }
+.banner-tittle p.lead{
+    color: #fff;
+   
+}
+
+
+
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.banner-title {
+    overflow: hidden;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white; 
+}
+
+.lead {
+    display: inline-block;
+    color: white;
+}
+
+.lead span {
+    display: inline-block;
+    animation: popIn 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite forwards;
+    transform-origin: 50% 50%;
+}
+.buttonclass button
+{
+    color: black;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+#secondheading
+{
+    color: white;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    
+}
+#cardsin {
+    background: url(bg1.jpg);
+    
+}
+.card1
+{
+    background-color: red;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border-radius: 50px;
+    border: 4px solid cyan;
+    
+}
+.card1 img{
+    clip-path: circle(100);
+}
+.card2
+{
+    background-color: rgb(19, 121, 19);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; border-radius: 50px;
+    border: 4px solid cyan;
+}
+.card3
+{
+    background-color: rgb(32, 42, 178);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; border-radius: 50px;
+    border: 4px solid cyan;
+}
+.card4
+{
+    background-color: rgb(179, 179, 46);
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; border-radius: 50px;
+    border: 4px solid cyan;
+}
+.card5
+{
+    background-color: purple;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; border-radius: 50px;
+    border: 4px solid cyan;
+}
+.card6
+{
+    background-color: orangered;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; border-radius: 50px;
+    border: 4px solid cyan;
+}
+.card7
+{
+    background-color: blue;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; border-radius: 50px;
+    border: 4px solid cyan;
+}
+.card8
+{
+    background-color: green;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; border-radius: 50px;
+    border: 4px solid cyan;
+}
+.card9
+{
+    background-color: rgb(218, 32, 32);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; border-radius: 50px;
+    border: 4px solid cyan;
+}
+.card
+{
+   border: 2px solid white;
+}
+
+#testimonials{
+    background-color: black;
+    padding: 50px 0;
+    position: relative;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+}
+#testimonials:hover
+{
+    background : linear-gradient(135deg, #00f, #0ff, #f00, #ff0, rgb(25, 78, 6));
+}
+#testimonalinnerbox
+{
+    background-color: black;
+}
+#testimonals::before{
+ background-color: rgb(52, 73, 94,0.7);
+ content: "";
+ position: absolute;
+ top: 0;
+ width: 100%;
+ height: 100%;
+}
+#secondheading {
+    background-color:inherit;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#secondheading p {
+    font-size: 1.5rem;
+    color: white;
+    margin: 0; 
+    display: inline-block; 
+    opacity: 0;
+    animation: appear 2.5s infinite forwards;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+}
+
+@keyframes appear {
+    to {
+        opacity: 1; 
+    }
+}
+#secondheading p span:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+#secondheading p span:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+#secondheading p span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.btn {
+background-color: red;
+color: white;
+border-radius: 50px;
+border: 2px solid white;
+}
+.card-title
+{
+    font-size: 30px;
+}
+
+.card9 ,.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8{
+    position: relative;
+    overflow: hidden;
+}
+
+.card9::before ,.card1::before,.card2::before,.card3::before,.card4::before,.card5::before,.card6::before,.card7::before,.card8::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #00f, #0ff, #f00, #ff0, #00f);
+    mix-blend-mode: screen;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card9:hover::before ,.card8:hover::before,.card1:hover::before ,.card2:hover::before,.card3:hover::before,.card4:hover::before,.card5:hover::before,.card6:hover::before,.card7:hover::before{
+    opacity: 0.5;
+}
+
+#functionality,#functionality-3
+{
+    
+    color: white;
+    
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-right:5px solid #0ff;
+}
+#functionality:hover,#functionality-2:hover,#functionality-3:hover{
+    background: linear-gradient(135deg, #00f, #0ff, #f00, #ff0, #00f);   
+}
+
+#functionality-2
+{
+   
+    color: white;
+    
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-left:5px solid #0ff;
+}
+
+#func-img1
+{
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+#slidingbox-1
+{
+    color: white;
+    font-size: 30px;
+    background-color: rgb(50, 36, 36);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    justify-content: right;
+    align-items: right;
+    border-left: 5px solid #ff0;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+#slidingbox-1 p{
+    padding-top: 50px;
+    padding-left: 70px;
+    padding-right: 40px;
+}
+#slidingbox-2
+{
+    color: white;
+    font-size: 30px;
+    background-color: rgb(50, 36, 36);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    justify-content: right;
+    align-items: right;
+    border-right: 5px solid #ff0;
+
+     border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+#slidingbox-2 p{
+    padding-top: 50px;
+    padding-left: 70px;
+    padding-right: 40px;
+}
+#slidingbox-3
+{
+    color: white;
+    font-size: 30px;
+    background-color: rgb(50, 36, 36);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    justify-content: right;
+    align-items: right;
+    border-left: 5px solid #ff0;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+#slidingbox-3 p{
+    padding-top: 50px;
+    padding-left: 70px;
+    padding-right: 40px;
+}
+
+#contact{
+    position: relative;
+   }
+   #contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(bg1.jpg) no-repeat center center/cover;
+   }
+   #contact-box{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+   }
+   #contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+    background-color: rgb(29, 29, 29);
+   }
+   #contact-box textarea{
+   width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+    background-color: rgb(29, 29, 29);
+   }
+   #contact-box form{
+    width: 40%;
+   }
+   #contact-box label{
+    font-size: 1.3rem;
+   }
+   #contact h1,#client-section h1{
+    font-family: 'Pacifico', cursive;
+   }
+
+   #footer-sidebar{
+    color: white;
+    background-color: #34495e;
+    padding: 20px o;
+
+}
+.footer-widget h4:after{
+    content: "";
+    background-color: white;
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 5px 0;
+}
+.latest-news li{
+    margin-bottom: 3px;
+}
+#footer{
+    color: white;
+    background-color: black;
+    padding: 10px 0;
+}
+body.night-mode  {
+   background-color: rgb(255, 253, 249);
+    color: black;
+}
+body.night-mode #nightmodebtn
+{
+    
+}
+body.night-mode #navbar a{
+    color: black;
+    border: 2px solid black;
+}
+body.night-mode #heading{
+    color:black;
+}
+body.night-mode hr{
+    color:black;
+    
+}
+body.night-mode #navbar2 a{
+    color: black;
+}
+body.night-mode #navbar img{
+    display: none;
+}
+body.nigt-mode .banner 
+{
+    color: black;
+}
+body.nigt-mode #testimonalinnerbox
+{
+    color: black;
+    background-color: white;
+}
+body.nigt-mode #sectionheading
+{
+    color: black;
+    background-color: white;
+}
