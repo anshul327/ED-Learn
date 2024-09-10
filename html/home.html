@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> home </title>
+    <link rel="stylesheet" href="path/to/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="homejs.js"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald&family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="navbar">
+            <div class="col-2" id="heading">
+                Panorama
+            </div>
+            <div class="col-2" id="nightmode" >
+                <img src="Screenshot 2023-11-28 171844.png" alt="">
+            </div>
+            <div class="col-8">
+                <div class="taskbar">
+                    <a href="">Home</a>
+                    <a href="quiz.html" target="_blank">E-Quiz</a>
+                    <a href="#secondheading" id="c1">Courses</a>
+                    <a href="#testimonials">Blog</a>
+                    <a href="#contact">Contact Us</a>    
+                    <button type="button" class="btn btn-danger"  onclick="toggleNightMode()" id="nightmodebtn">Night</button>
+                    <button type="button" class="btn btn-danger" >login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+     <!-- 2nd paragraph -->
+     <div class="conatiner" id="navbar2">
+        <div class="row" id="languages">
+            
+            <div class="col-12" id="names">
+             <a href="https://www.java.com/en/" target="_blank">JAVA</a>
+             <a href="https://www.w3schools.com/cpp/cpp_intro.asp" target="_blank">C++</a>
+             <a href="https://www.w3schools.com/html/" target="_blank" >HTML</a>
+             <a href="https://www.w3schools.com/css/" target="_blank">CSS</a>
+             <a href="https://react.dev/" target="_blank">REACT JS</a>
+             <a href="https://www.php.net/" target="_blank">PHP</a>
+             <a href="https://www.javascript.com/" target="_blank">JAVASCRIPT</a> 
+             <div id="seacrh" style="background-color: inherit;">
+                <form class="d-flex justify-content-start" role="search" style="background-color: inherit;">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+              
+            </div>
+        </div>
+     </div>
+     <hr>
+
+        <div id="banner" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="banner-title">
+                            <h1 class="title">Welcome to Panorama...!!</h1>
+                            <p class="lead" id="programming-text">
+                                <span>Y</span>
+                                <span>o</span>
+                                <span>u</span>
+                                <span>r</span>
+                                <span> </span>
+                                <span>G</span>
+                                <span>a</span>
+                                <span>t</span>
+                                <span>e</span>
+                                <span>w</span>
+                                <span>a</span>
+                                <span>y</span>
+                                <span> </span>
+                                <span>t</span>
+                                <span>o</span>
+                                <span> </span>
+                                <span>P</span>
+                                <span>r</span>
+                                <span>o</span>
+                                <span>g</span>
+                                <span>r</span>
+                                <span>a</span>
+                                <span>m</span>
+                                <span>m</span>
+                                <span>i</span>
+                                <span>n</span>
+                                <span>g</span>
+                                <span> </span>
+                                <span>E</span>
+                                <span>x</span>
+                                <span>c</span>
+                                <span>e</span>
+                                <span>l</span>
+                                <span>l</span>
+                                <span>e</span>
+                                <span>n</span>
+                                <span>c</span>
+                                <span>e</span>
+                                <span>!</span>
+                            </p>
+                            <p class="lead">Unlock the world of coding with Panorama. Whether you're a seasoned developer or just starting your coding journey, we've got something for everyone.</p>
+                        </div>
+
+                     <div class="buttonclass">
+                        <button type="button" class="btn btn-danger">Exclusive</button>
+                        <button type="button" class="btn btn-danger">Premium</button>
+                     </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+  <hr>
+  <div id="cardsin">
+  <div class="container" id="secondheading">
+    <p>Recomonded Program..!!</p>
+  </div>
+  <!-- course container -->
+ 
+  <div class="container" >
+    <div class="row">
+        <div class="col-4 py-5"><div class="card1 " style="width: 18rem;">
+            <img src="ml.jpg" class="card-img-top img-fluid"   style="clip-path: circle(35%); overflow: hidden;" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Machine Learning</h5>
+              <p class="card-text">learn ml.</p>
+              <a href="#" class="btn btn-danger">Explore</a>
+            </div>
+          </div></div>
+        <div class="col-4 py-5">
+            <div class="card2 " style="width: 18rem;">
+                <img src="ai.jpg" class="card-img-top" style="clip-path: circle(35%); overflow: hidden;" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">AI tools</h5>
+                  <p class="card-text">learn AI.</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-4 py-5">
+            <div class="card3 " style="width: 18rem;">
+                <img src="cloud.jpg" class="card-img-top" style="clip-path: circle(35%); overflow: hidden;"alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cloud services</h5>
+                  <p class="card-text">cloud learn service.</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 py-5">
+            <div class="card4 " style="width: 18rem;">
+                <img src="dbms.png" class="card-img-top" style="clip-path: circle(35%); overflow: hidden;"alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">DBMS</h5>
+                  <p class="card-text">learn dbms.</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-4 py-5">
+            <div class="card5 " style="width: 18rem;">
+                <img src="wed.jpg" class="card-img-top" style="clip-path: circle(35%); overflow: hidden;"alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">web development</h5>
+                  <p class="card-text">learn webdevelopment</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-4 py-5">
+            <div class="card6 " style="width: 18rem;">
+                <img src="appd.jpg" class="card-img-top"style="clip-path: circle(35%); overflow: hidden;" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">App development</h5>
+                  <p class="card-text">learn app development</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 py-5">
+            <div class="card7 " style="width: 18rem;">
+                <img src="devops.png" class="card-img-top" style="clip-path: circle(35%); overflow: hidden;" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">DEVEOPS</h5>
+                  <p class="card-text">learn devoops</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-4 py-5">
+            <div class="card8 " style="width: 18rem;">
+                <img src="office.jpg" class="card-img-top" style="clip-path: circle(35%); overflow: hidden;" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">learn Office</h5>
+                  <p class="card-text">learn office tools</p>
+                  <a href="#" class="btn btn-primary">Explore</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-4 py-5">
+            <div class="card9 " style="width: 18rem;">
+                <img src="dcd.jpg" class="card-img-top img-fluid" style="clip-path: circle(35%); overflow: hidden;" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Digital electronic</h5>
+                  <p class="card-text">learn dcd.</p>
+                  <a href="#" class="btn btn-primary ">Explore</a>
+                </div>
+              </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+  <hr>
+
+  <!-- feature multiplicity -->
+  <div class="container" id="hero">
+    <div class="row"  id="functionality">
+      <div class="col-3 " id="func-img1" style="clip-path: circle(45%); overflow: hidden; border: 5px solid white;">
+         <img src="bg6.jpg" alt="">
+      </div>
+      <div class="col-9" id="slidingbox-1">
+           <p>provide the functionality to learn the bauc learning of real time competetive programming experience </p>
+      </div>
+      <hr>
+    </div>
+    <div class="row" id="functionality-2">
+      <div class="col-9" id="slidingbox-2">
+        <p>Quxiimg based on real time development expericence on whatever you learned on the jounrey of coding </p>
+   </div>
+      <div class="col-3" id="func-img1" style="clip-path: circle(45%); overflow: hidden; border: 5px solid white;">
+         <img src="bg6.jpg" alt="">
+      </div>
+  
+    </div>
+    <hr>
+    <div class="row" id="functionality-3">
+      <div class="col-3" id="func-img1" style="clip-path: circle(45%); overflow: hidden; border: 5px solid white;">
+         <img src="peakpx.jpg" alt="">
+      </div>
+      <div class="col-9" id="slidingbox-3">
+           <p>improving functonality of machine learning and get into the aritficial technology of new world </p>
+      </div>
+    </div>
+    <hr>
+  </div>
+  
+
+  
+
+    <!-- testimonals -->
+    <div id="testimonials" class="section" style="border: 5px solid cyan;">
+      <div class="container py-5" style="border: 5px solid cyan;" id="testimonalinnerbox">
+           <div class="row">
+               <div class="col-md-12">
+                   <div class="col-md-12 py-5" id="sectionheading">
+                       <h2 class="section-head" style="color: white;  font-size: 50px; text-decoration: underline;">Testimonals</h2>
+                   </div>
+               </div>
+               <div class="col-md-6">
+                   <div class="testimonials" >
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum possimus doloremque, labore unde aliquid repellendus quos quo eos sit expedita.</p>
+                       <img src="billgate.webp" alt="" style="border: 2px solid cyan;">
+                       <div class="author"  style="padding-top: 10px;  font-size: 25px;">Bills gates</div>
+                       <div class="companyname">Microsoft</div>
+                   </div>
+               </div>
+               <div class="col-md-6">
+                   <div class="testimonials">
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum possimus doloremque, labore unde aliquid repellendus quos quo eos sit expedita.</p>
+                       <img src="steivejob.webp" alt="" style="border: 2px solid cyan;">
+                       <div class="author" style="padding-top: 10px;  font-size: 25px;">Stieve jobs</div>
+                       <div class="companyname">Apple</div>
+                   </div>
+               </div>
+           </div>
+      </div>
+</div>
+
+ <!-- contact us -->
+ <div id="cardsin">
+  <div class="container" id="secondheading">
+    <p>Contact Us..!!</p>
+  </div>
+ <section id="contact">
+  
+      <div id="contact-box">
+          <form action="">
+          <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="nameii" placeholder="enter your name" required>
+          </div>
+          <div class="form-group">
+              <label for="name">Email:</label>
+              <input type="email" name="name" id="name" placeholder="enter your email" required>
+          </div>
+          <div class="form-group">
+              <label for="name">Number:</label>
+              <input type="number" name="name" id="name" placeholder="enter your phone number" required>
+          </div>
+          <div class="form-group">
+              <label for="name">Address:</label>
+             <textarea name="message" id="message" cols="30" rows="10" placeholder="enter the adress"></textarea>
+          </div>
+         
+          </form>
+      </div>
+ 
+</section>
+
+<!-- footer -->
+<div id="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">copywright company name</div>
+          <div class="col-md-6">
+              <ul id="social-icons" class="float-md-right">
+                  <li>Instagram</li>
+                  
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<script>
+//const scroolbtn = document.querySelector('#c1')
+        
+
+function toggleNightMode() {
+      var body = document.body;
+      body.classList.toggle('night-mode');
+      document.getElementById('nightmodebtn').innerText= "Day";
+  }
+
+  
+</script>
+
+
+</body>
+</html>

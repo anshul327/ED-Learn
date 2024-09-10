@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="stylesheet" href="path/to/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="quiz.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald&family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div  id="heading">
+    <div class="container">
+        <div class="row">
+            <div id="cardsin">
+                <div class="container" id="secondheading">
+                  <p>...E-community quizottica...</p>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+    <hr>
+
+   <div class="container">
+    <div class="row" id="domain">
+        <div class="domain">
+        <button type="button" class="btn btn-primary" onclick="startquiz('2')">C++</button>
+        <button type="button" class="btn btn-secondary" onclick="startquiz('1')">Java</button>
+        <button type="button" class="btn btn-success" onclick="startquiz('3')">Python</button>
+        <button type="button" class="btn btn-danger" onclick="startquiz('4')">HTML</button>
+        <button type="button" class="btn btn-warning" onclick="startquiz('5')">CSS</button>
+        <button type="button" class="btn btn-info" onclick="startquiz('6')">PHP</button>
+        <button type="button" class="btn btn-light"  onclick="startquiz('7')">JAVASCRIPT</button>
+    </div>
+    </div>
+   </div>
+   <hr>
+
+
+   <div class="container">
+    <div class="row" id="domain">
+        <div class="domain" id="startbtn">
+        <button type="button" class="btn btn-success" onclick="startQuiz('2')" >Start</button>
+        <button type="button" class="btn btn-danger" onclick="finishQuiz()" >FINISH</button>
+    </div>
+    </div>
+   </div>
+
+   
+
+   <!-- quiz block -->
+
+    <!-- java -->
+   <div id="quizquestion-1">
+   <div class="container" id="box-1">
+     <div class="row" id="question">
+       <p>
+        Question : <br>
+What is the output of the following Java code? <br>
+public class MyClass {<br>
+    public static void main(String[] args) {<br>
+        int x = 5;<br>
+        int result = ++x + x++ - --x;<br>
+        System.out.println(result);<br>
+    } 
+} 
+       </p>
+     </div>
+     <div class="row" id="firsttwooption">
+       <div class="col-6 py-5">
+        <button type="button" class="btn btn-danger-A" onclick="checkAnswer(1,'A')" style="color: white;">A . 10</button>
+       </div>
+       <div class="col-6 py-5">
+        <button type="button" class="btn btn-danger-B" onclick="checkAnswer(1,'B')" style="color: white;">B . 15</button>
+       </div>
+     </div>
+     <div class="row" id="lasttwooption">
+        <div class="col-6 ">
+            <button type="button" class="btn btn-danger-C" onclick="checkAnswer(1,'C')" style="color: white;">C . 12</button>
+           </div>
+           <div class="col-6 ">
+            <button type="button"  class="btn btn-danger-D" onclick="checkAnswer(1,'D')" style="color: white;">D . 11</button>
+           </div>
+     </div>
+   </div>
+   </div>
+
+
+
+
+<!-- c++ -->
+<div id="quizquestion-2">
+<div class="container py-4" >
+    <div class="row" id="question">
+      <p>
+        Question:
+        <br>
+        Explain the concept of "Polymorphism" in C++ OOP. How does it contribute to code flexibility and extensibility? Provide an example to illustrate polymorphism in C++.
+      </p>
+    </div>
+    <div class="row" id="firsttwooption">
+      <div class="col-6 py-5">
+       <button type="button" class="btn btn-danger-A" onclick="checkAnswer(2,'A')" style="color: white;">A. Polymorphism is the ability of a class to have multiple constructors.</button>
+      </div>
+      <div class="col-6 py-5">
+       <button type="button" class= "btn btn-danger-B" onclick="checkAnswer(2,'B')" style="color: white;">B. Polymorphism is the ability of a class to have multiple member functions with the same name but different parameters.</button>
+      </div>
+    </div>
+    <div class="row" id="lasttwooption">
+       <div class="col-6 ">
+           <button type="button" class="btn btn-danger-C" onclick="checkAnswer(2,'C')" style="color: white;">C. Polymorphism is the ability of a class to take multiple forms through inheritance and function overriding.</button>
+          </div>
+          <div class="col-6 ">
+           <button type="button"  class="btn btn-danger-D" onclick="checkAnswer(2,'D')" style="color: white;">D. Polymorphism is the ability of a class to hide its implementation details.</button>
+          </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Python -->
+ <div id="quizquestion-3">
+ <div class="container py-4" >
+    <div class="row" id="question">
+      <p>
+        Question:
+        <br>
+        Explain the concept of "Inheritance" in Python OOP. How does inheritance support code reuse and extensibility? Provide an example to illustrate the use of inheritance in Python.
+      </p>
+    </div>
+    <div class="row" id="firsttwooption">
+      <div class="col-6 py-5">
+       <button type="button" class="btn btn-danger-A" onclick="checkAnswer(3,'A')" style="color: white;">A. Inheritance is the ability of a class to have multiple constructors.</button>
+      </div>
+      <div class="col-6 py-5">
+       <button type="button" class="btn btn-danger-B" onclick="checkAnswer(3,'B')" style="color: white;">B. Inheritance is the ability of a class to have multiple member functions with the same name but different parameters.</button>
+      </div>
+    </div>
+    <div class="row" id="lasttwooption">
+       <div class="col-6 ">
+           <button type="button"class="btn btn-danger-C" onclick="checkAnswer(3,'C')" style="color: white;">C. Inheritance is the mechanism by which a class can inherit attributes and behaviors from another class, promoting code reuse and extensibility.</button>
+          </div>
+          <div class="col-6 ">
+           <button type="button" class="btn btn-danger-D" onclick="checkAnswer(3,'D')" style="color: white;">D. Inheritance is the ability of a class to hide its implementation details.</button>
+          </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- html -->
+<div id="quizquestion-4">
+    <div class="container py-4" >
+       <div class="row" id="question">
+         <p>
+           Question:
+           <br>
+           Which of the following HTML elements is used to define a container for an external application or plugin, such as Java applets, Flash, or Silverlight?
+         </p>
+       </div>
+       <div class="row" id="firsttwooption">
+         <div class="col-6 py-5">
+          <button type="button" class="btn btn-danger-A" onclick="checkAnswer(4,'A')" style="color: white;">A. object</button>
+         </div>
+         <div class="col-6 py-5">
+          <button type="button" class="btn btn-danger-B" onclick="checkAnswer(4,'B')" style="color: white;">B. embed</button>
+         </div>
+       </div>
+       <div class="row" id="lasttwooption">
+          <div class="col-6 ">
+              <button type="button" class="btn btn-danger-C" onclick="checkAnswer(4,'C')" style="color: white;">C. applet.</button>
+             </div>
+             <div class="col-6 ">
+              <button type="button"  class="btn btn-danger-D" onclick="checkAnswer(4,'D')" style="color: white;">D. iframe.</button>
+             </div>
+       </div>
+     </div>
+   </div>
+
+   <!-- css -->
+<div id="quizquestion-5">
+    <div class="container py-4" >
+       <div class="row" id="question">
+         <p>
+           Question:
+           <br>
+           What is the "box model" in CSS, and how does it influence the layout of HTML elements?
+         </p>
+       </div>
+       <div class="row" id="firsttwooption">
+         <div class="col-6 py-5">
+          <button type="button" class="btn btn-danger-A" onclick="checkAnswer(5,'A')" style="color: white;">A. It defines how elements are positioned in a 3D space.</button>
+         </div>
+         <div class="col-6 py-5">
+          <button type="button"  class="btn btn-danger-B" onclick="checkAnswer(5,'B')" style="color: white;">B. It refers to the technique of creating rounded corners for elements.</button>
+         </div>
+       </div>
+       <div class="row" id="lasttwooption">
+          <div class="col-6 ">
+              <button type="button"class="btn btn-danger-C" onclick="checkAnswer(5,'C')" style="color: white;">C. It describes the spacing and layout of an element, consisting of content, padding, border, and margin..</button>
+             </div>
+             <div class="col-6 ">
+              <button type="button" class="btn btn-danger-D" onclick="checkAnswer(5,'D')" style="color: white;">D. It represents a method for organizing and styling lists in CSS.</button>
+             </div>
+       </div>
+     </div>
+   </div>
+
+
+
+    <!-- php -->
+<div id="quizquestion-6">
+    <div class="container py-4" >
+       <div class="row" id="question">
+         <p>
+           Question:
+           <br>
+           Explain the difference between GET and POST methods in PHP when submitting form data. What are the key considerations when choosing between them?
+         </p>
+       </div>
+       <div class="row" id="firsttwooption">
+         <div class="col-6 py-5">
+          <button type="button" class="btn btn-danger-A" onclick="checkAnswer(6,'A')" style="color: white;">A. GET is suitable for sensitive data, while POST is preferable for non-sensitive data..</button>
+         </div>
+         <div class="col-6 py-5">
+          <button type="button" class="btn btn-danger-B" onclick="checkAnswer(6,'B')" style="color: white;">B. GET is more secure than POST for transferring sensitive information.</button>
+         </div>
+       </div>
+       <div class="row" id="lasttwooption">
+          <div class="col-6 ">
+              <button type="button" class="btn btn-danger-C" onclick="checkAnswer(6,'C')" style="color: white;">C. GET appends data to the URL, while POST sends data in the request body..</button>
+             </div>
+             <div class="col-6 ">
+              <button type="button" class="btn btn-danger-D" onclick="checkAnswer(6,'D')" style="color: white;">D. POST is faster than GET in processing form submissions..</button>
+             </div>
+       </div>
+     </div>
+   </div>
+
+    <!-- javascript-->
+<div id="quizquestion-7">
+    <div class="container py-4" >
+       <div class="row" id="question">
+         <p>
+           Question:
+           <br>
+           Explain the concept of "closures" in JavaScript. Provide an example demonstrating the use of closures and discuss the advantages they offer in terms of code organization and functionality.
+         </p>
+       </div>
+       <div class="row" id="firsttwooption">
+         <div class="col-6 py-5">
+          <button type="button" class="btn btn-danger-A" class="hh" onclick="checkAnswer(7,'A')" style="color: white;">A. Closures are a way to prevent variable modification in JavaScript.</button>
+         </div>
+         <div class="col-6 py-5">
+          <button type="button" class="btn btn-danger-B" onclick="checkAnswer(7,'B')" style="color: white;">B. Closures allow JavaScript functions to have private variables..</button>
+         </div>
+       </div>
+       <div class="row" id="lasttwooption">
+          <div class="col-6 ">
+              <button type="button" class="btn btn-danger-C" onclick="checkAnswer(7,'C')" style="color: white;">C. Closures are used for asynchronous operations in JavaScript.</button>
+             </div>
+             <div class="col-6 ">
+              <button type="button" class="btn btn-danger-D" onclick="checkAnswer(7,'D')" style="color: white;">D. Closures are a feature for handling exceptions in JavaScript..</button>
+             </div>
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+<div id="quiz-result" class="container">
+  <p>Total Correct Answers: <span id="total-correct" style="color: white;">0</span></p>
+  <p>Total Incorrect Attemps: <span id="total-incorrect" style="color: white;">0</span> </p>
+  <p>Total Questions Attempted: <span id="total-attempted" style="color: white;">0</span></p>
+  
+</div>
+
+
+
+<script>
+    function startquiz(domain) {
+    var quizQuestions = document.querySelectorAll('[id^="quizquestion-"]');
+    quizQuestions.forEach(function(question) {
+        question.style.display = 'none';
+    });
+    var selectedQuestion = document.getElementById('quizquestion-' + domain);
+    if (selectedQuestion) {
+        selectedQuestion.style.display = 'block';
+    }
+  }
+
+
+
+
+var totalCorrect = 0;
+var totalAttempted = 0;
+
+function startQuiz(domain) {
+    var quizQuestions = document.querySelectorAll('[id^="quizquestion-"]');
+    quizQuestions.forEach(function (question) {
+        question.style.display = 'none';
+    });
+
+    var selectedQuestion = document.getElementById('quizquestion-' + domain);
+    if (selectedQuestion) {
+        selectedQuestion.style.display = 'block';
+    }
+}
+
+
+function finishQuiz() {
+
+    document.getElementById('total-correct').innerText = totalCorrect;
+    document.getElementById('total-incorrect').innerText = totalAttempted-totalCorrect;
+    document.getElementById('total-attempted').innerText = totalAttempted;
+
+
+    var quizQuestions = document.querySelectorAll('[id^="quizquestion-"]');
+    quizQuestions.forEach(function (question) {
+        question.style.display = 'none';
+    });
+
+}
+
+
+
+
+    function checkAnswer(questionNumber, selectedOption) {
+            if(questionNumber==2 || questionNumber==7)
+            {var correctAnswer = 'B'; }
+            else if(questionNumber==1)
+            {
+              var correctAnswer = 'D'; 
+            }
+            else if(questionNumber==4 )
+            {var correctAnswer = 'A'; }
+            else
+            {
+              var correctAnswer = 'C'; 
+            }
+            totalAttempted++;
+    if (selectedOption === correctAnswer) {
+        totalCorrect++;
+    }
+
+            var selectedButton = document.getElementById('quizquestion-' + questionNumber).querySelector(".btn-danger-"+ selectedOption+"");
+             
+            if (selectedOption === correctAnswer) {
+              
+                selectedButton.style.backgroundColor = 'green';
+            } else {
+              
+                selectedButton.style.backgroundColor = 'red';
+            }
+        }
+
+</script>
+</body>
+</html>

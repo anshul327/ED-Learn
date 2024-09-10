@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="registrationstyl.e.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+   <div class="heading">
+    Panorama....
+   </div>
+</div> 
+   <div class="container py-5" id="logincontainer">
+    <div class="row">
+        <div class="col-12" id="logo">
+            <img src="4-abfd6a9858570be58acf4da1cce7978b2c4cf00a8e90d2eb82a39ab145fc8033.jpg" alt="">
+        </div>
+        <div class="col-6" id="login">
+            login
+        </div>
+        <div class="col-6" id="sigi-in">
+            sign-in
+        </div>
+        
+
+        <div class="row" id="form">
+            <div class="col-12">
+                <form action=""  id="loginForm">
+                    <div class="row" id="name">
+                    <label for="name" >Name:</label>
+                    <input type="text" required>
+                </div>
+                    <div class="row" id="email">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="mail" required>
+                </div>
+                    <div class="row" id="number">
+                    <label for="numebr">Number:</label>
+                    <input type="number" required>
+                </div>
+                    <div class="row" id="age">
+                    <label for="age">Age:</label>
+                    <input type="number" name="" id=""required>
+                </div>
+                    <div class="row" id="gender">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </div>
+                    </select>
+                </form>
+            </div>
+
+
+            <div class="row" id="form-2">
+                <div class="col-12">
+                    <form action="" id="signupForm" style="display: none;">
+                        <div class="row" id="email">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="mail" required>
+                    </div>
+                        <div class="row" id="email">
+                        <label for="email">Password:</label>
+                        <input type="password" name="email" id="mail" required>
+                    </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row" id="loginbutton">
+                <button type="button" class="btn btn-outline-warning" onclick="showSignupForm()">Login</button>
+                <br>
+                <button type="button" class="btn btn-outline-warning" onclick="showLoginForm()">Sign-up</button>
+            </div>
+            <div class="row" id="loginbutton">
+                <button type="button" class="btn btn-outline-warning"><a href="home.html" target="_blank">SUBMIT</a></button>
+            </div>
+            
+        </div>
+        
+       
+       
+    
+</div>
+
+<script>
+    function showLoginForm() {
+        document.getElementById('loginForm').style.display = 'block';
+        document.getElementById('signupForm').style.display = 'none';
+        document.getElementById('sigi-in').style.backgroundColor = "  rgb(30, 8, 61)";
+        document.getElementById('login').style.backgroundColor = "  rgb(53, 0, 128)";
+    }
+
+    function showSignupForm() {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('signupForm').style.display = 'block';
+        document.getElementById('login').style.backgroundColor = "  rgb(30, 8, 61)";
+        document.getElementById('sigi-in').style.backgroundColor = "  rgb(53, 0, 128)";
+    }
+</script>
+</body>
+</html>
